@@ -102,7 +102,7 @@ function afficherPlus20() {
 // À l'aide d'une boucle parcourez le tableau et construire un tableau des villes, ordonné par leur nombre d'habitant
 
 data.villes.sort((a, b) => {
-  return parseInt(b.population) - parseInt(a.population);
+  return parseFloat(b.population) - parseInt(a.population);
 });
 
 const villesOrdonnees: string[] = [];
